@@ -169,6 +169,17 @@ nav ul li a:hover {
     color: #FFD700;
 }
 
+/* Style for the icons */
+#contact i {
+    margin-right: 8px; /* Adds spacing between the icon and text */
+    font-size: 1.2rem; /* Adjusts the icon size */
+    color: #4CAF50; /* Icon color */
+}
+
+#contact i:hover {
+    color: #FFD700; /* Change color when hovered */
+}
+
 /* Footer */
 footer {
     background-color: #333; /* Dark Footer */
@@ -218,6 +229,23 @@ footer p {
         font-size: 0.9rem;
     }
 }
+
+/* Profile Picture */
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* space between image and text */
+}
+
+.about-photo {
+    width: 150px; /* Set your preferred width */
+    height: 150px; /* Keep it square */
+    object-fit: cover;
+    border-radius: 70%; /* Make it circular */
+    border: 3px solid #ccc; /* Optional: add border */
+}
+
 
 @media (max-width: 480px) {
     header {
