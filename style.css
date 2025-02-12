@@ -242,7 +242,7 @@ footer p {
     width: 200px; /* Set your preferred width */
     height: 200px; /* Keep it square */
     object-fit: cover;
-    border-radius: 50%; /* Make it circular */
+    border-radius: 100%; /* Make it circular */
     border: 3px solid #ccc; /* Optional: add border */
 }
 
