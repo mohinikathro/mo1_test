@@ -9,6 +9,25 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        .btn {
+            display: inline-block;
+            padding: 10px 15px;
+            margin: 5px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .btn-skills {
+            font-size: 12px;
+            background: linear-gradient(45deg, #ff7e5f, #feb47b);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            display: inline-block;
+            margin: 3px;
+        }
+    </style>
 </head>
 
 <body>
@@ -27,21 +46,10 @@
         </div>
     </header>
 
-    <section id="about">
-        <div class="container">
-            <h2 data-aos="fade-up">About Me</h2>
-	    <div class="abou-content">
-		<img src="Mo.jpg" alt="Mohini Kathrotiya" class="about-photo" data-aos="fade-right">
-                <p data-aos="fade-up">I specialize in AI-driven web applications, large language models, and predictive analytics. My mission is to solve real-world problems using cutting-edge technology.</p>
-	     </div>
-        </div>
-    </section>
-
     <section id="projects">
         <div class="container">
             <h2 data-aos="fade-up">Projects</h2>
 
-            <!-- AI-Driven Content Source Identification -->
             <div class="project" data-aos="flip-left">
                 <h3>AI-Driven Content Source Identification</h3>
                 <p><strong>Sep 2024 - Dec 2024</strong></p>
@@ -50,113 +58,33 @@
                     <li>Optimized Mistral-7B using QLoRA fine-tuning.</li>
                     <li>Improved prediction accuracy by 15% using Few-Shot Learning.</li>
                 </ul>
-                <p><strong>Skills:</strong> LLMs, Transformers, PyTorch</p>
                 <a href="https://huggingface.co/spaces/Mohinikathro/AI-Content-Detector" target="_blank" class="btn">Live Demo</a>
-		 <a href="https://github.com/mohinikathro/AI-Driven-Content-Source-Identification" target="_blank" class="btn">View on GitHub</a>
+                <a href="https://github.com/mohinikathro/AI-Driven-Content-Source-Identification" target="_blank" class="btn">View on GitHub</a>
+                <div>
+                    <span class="btn-skills">LLMs</span>
+                    <span class="btn-skills">Transformers</span>
+                    <span class="btn-skills">PyTorch</span>
+                </div>
             </div>
 
-            <!-- Wildfire Prediction -->
             <div class="project" data-aos="flip-left">
-                <h3>Predictive Analytics for Wildfire Risk and Behavior</h3>
+                <h3>Predictive Analytics for Wildfire Risk</h3>
                 <p><strong>Sep 2024 - Nov 2024</strong></p>
                 <ul>
-                    <li>Developed wildfire risk prediction models, achieving 96.19% R² with Gradient Boosting.</li>
-                    <li>Applied PCA & hyperparameter tuning, improving accuracy by 40% and reducing training time by 35%.</li>
-                    <li>Created geospatial risk maps and Power BI dashboards for actionable insights.</li>
+                    <li>Developed wildfire risk prediction models, achieving 96.19% R².</li>
+                    <li>Applied PCA & hyperparameter tuning, improving accuracy by 40%.</li>
+                    <li>Created geospatial risk maps and Power BI dashboards.</li>
                 </ul>
-                <p><strong>Skills:</strong> Power BI, NumPy, PCA, Scikit-Learn, XGBoost</p>
+                <a href="https://github.com/yourusername/wildfire-risk-prediction" target="_blank" class="btn">View on GitHub</a>
+                <div>
+                    <span class="btn-skills">Power BI</span>
+                    <span class="btn-skills">NumPy</span>
+                    <span class="btn-skills">PCA</span>
+                    <span class="btn-skills">XGBoost</span>
+                </div>
             </div>
-
-            <!-- Election Prediction -->
-            <div class="project" data-aos="flip-left">
-                <h3>Predicting Election Outcomes from News Articles</h3>
-                <p><strong>Feb 2024 - May 2024</strong></p>
-                <ul>
-                    <li>Built a Kafka pipeline with News API to analyze news and predict elections with 95% accuracy.</li>
-                    <li>Used PySpark’s Bloom filter to improve data quality by 90% and store data in Amazon S3.</li>
-                    <li>Designed an LDA model, achieving 85% accuracy in theme identification.</li>
-                </ul>
-                <p><strong>Skills:</strong> Machine Learning, NLP, PySpark</p>
-            </div>
-
-            <!-- Toxic Plant Classification -->
-            <div class="project" data-aos="flip-left">
-                <h3>Toxic Plant Species Classification</h3>
-                <p><strong>Feb 2024 - May 2024</strong></p>
-                <ul>
-                    <li>Trained CNN models on 10,000+ images, achieving 95% accuracy in poison detection.</li>
-                    <li>Compared MobileNetV1, MobileNetV2, EfficientNet Lite0, and Quantized CNN.</li>
-                    <li>MobileNetV2 excelled with 391% accuracy improvement and optimized memory efficiency.</li>
-                </ul>
-                <p><strong>Skills:</strong> Computer Vision, Deep Learning, CNNs</p>
-            </div>
-
-            <!-- Layoff Trends Analysis -->
-            <div class="project" data-aos="flip-left">
-                <h3>Analysis of Sector-Wise Layoff Trends</h3>
-                <p><strong>Aug 2023 - Dec 2023</strong></p>
-                <ul>
-                    <li>Analyzed layoffs using Python (Pandas, Matplotlib) and visualized trends with Tableau.</li>
-                    <li>Examined tech layoffs across 5,000+ employees, identifying key insights.</li>
-                    <li>Developed interactive dashboards to improve decision-making clarity by 50%.</li>
-                </ul>
-                <p><strong>Skills:</strong> Python, Tableau, Pandas, Matplotlib</p>
-            </div>
-
-            <!-- Student Data Analysis -->
-            <div class="project" data-aos="flip-left">
-                <h3>Student Data Analysis with Snowflake & SnowSQL</h3>
-                <p><strong>Sep 2023 - Dec 2023</strong></p>
-                <ul>
-                    <li>Used Snowflake and SnowSQL to store, query, and analyze student datasets efficiently.</li>
-                    <li>Performed SQL-based data analysis to uncover performance patterns.</li>
-                    <li>Developed interactive visualizations to showcase key insights.</li>
-                </ul>
-                <p><strong>Skills:</strong> Snowflake, SnowSQL, Data Analysis, Visualization</p>
-            </div>
-
-            <!-- Finance Management -->
-            <div class="project" data-aos="flip-left">
-                <h3>StudyBucks: Finance Simplified</h3>
-                <p><strong>Sep 2023 - Dec 2023</strong></p>
-                <ul>
-                    <li>Analyzed student financial behavior using custom survey data.</li>
-                    <li>Developed a Python-Flask ETL system to optimize student budgets, saving up to $400 for 50+ students.</li>
-                    <li>Created a financial planning solution integrating part-time earnings and expense tracking.</li>
-                </ul>
-                <p><strong>Skills:</strong> Python, Flask, PostgreSQL, ETL</p>
-            </div>
-
         </div>
     </section>
-
-    <section id="contact">
-    	<div class="container">
-    	     <h2 data-aos="fade-up">Contact Me</h2>
-             <p>
-                 <a href="mailto:kathrotiyamohini@gmail.com" title="Email">
-                     <i class="fas fa-envelope"></i> 
-                 </a>
-             </p>
-             <p>
-                 <a href="https://www.linkedin.com/in/mohini-kathrotiya/" target="_blank" title="Linkedin">
-                     <i class="fab fa-linkedin"></i>
-                 </a>
-             </p>
-             <p>
-                 <a href="https://github.com/Mohinikathro" target="_blank" title="Github">
-                     <i class="fab fa-github"></i>
-                 </a>
-             </p>
-        </div>
-    </section>
-
-
-
-
-    <footer>
-        <p>&copy; 2023-2025 Mohini Kathrotiya</p>
-    </footer>
 
     <script>
         AOS.init();
