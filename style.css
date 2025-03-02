@@ -54,6 +54,58 @@ nav ul li a:hover {
     color: #FFD700;
 }
 
+/* Education Section */
+#education {
+    padding: 4rem 1rem;
+    background-color: #1f1f1f;
+    text-align: left;
+}
+
+#education h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.education-item {
+    background: linear-gradient(135deg, #2f3b40, #3e4c51);
+    color: #fff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+.education-item h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.education-item p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.education-item ul {
+    list-style: none;
+    padding: 0;
+}
+
+.education-item ul li {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+}
+
 /* About Section */
 #about {
     padding: 3rem 1rem;
