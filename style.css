@@ -1,10 +1,10 @@
-/* General Styling */
+/* ========== General Styling ========== */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background: #121212; /* Dark Background */
-    color: #e0e0e0; /* Light text for contrast */
+    background: #121212;
+    color: #e0e0e0;
 }
 
 a {
@@ -12,8 +12,9 @@ a {
     color: inherit;
 }
 
+/* ========== Header ========== */
 header {
-    background-color: #333; /* Dark Header */
+    background-color: #333;
     color: #fff;
     padding: 2rem 0;
     text-align: center;
@@ -31,6 +32,7 @@ header p {
     font-weight: 300;
 }
 
+/* ========== Navigation ========== */
 nav ul {
     list-style: none;
     padding: 0;
@@ -54,7 +56,56 @@ nav ul li a:hover {
     color: #FFD700;
 }
 
-/* Education Section */
+/* ========== Container ========== */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 2rem;
+}
+
+/* ========== About Section ========== */
+#about {
+    padding: 3rem 1rem;
+    background-color: #1f1f1f;
+}
+
+.about-content,
+.abou-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.about-photo {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #ccc;
+}
+
+.about-text {
+    flex: 1;
+    min-width: 250px;
+    font-size: 18px;
+    color: #ddd;
+}
+
+.typed-text {
+    font-weight: 600;
+    color: #00bfff;
+}
+
+#about p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    line-height: 1.6;
+}
+
+/* ========== Education Section ========== */
 #education {
     padding: 4rem 1rem;
     background-color: #1f1f1f;
@@ -106,59 +157,10 @@ nav ul li a:hover {
     margin-bottom: 0.5rem;
 }
 
-/* About Section */
-#about {
-    padding: 3rem 1rem;
-    background-color: #1f1f1f;
-}
-
-.abou-content {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start; /* Aligns content to the left */
-    gap: 30px; /* Space between image and text */
-    flex-wrap: wrap;
-}
-
-.about-photo {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 50%; /* Makes the image circular */
-    border: 3px solid #fff; /* Optional: Add border */
-}
-
-#about p {
-    font-size: 1.1rem;
-    max-width: 800px;
-    line-height: 1.6;
-}
-
-.about-text {
-  flex: 1;
-  min-width: 250px;
-  font-size: 18px;
-  color: #ddd;
-}
-
-.typed-text {
-  font-weight: 600;
-  color: #00bfff; /* or any accent color you like */
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .abou-content {
-        flex-direction: column;
-        align-items: center; /* Center align on smaller screens */
-        text-align: center;
-    }
-}
-
-/* Projects Section */
+/* ========== Projects Section ========== */
 #projects {
     padding: 4rem 1rem;
-    background-color: #1a1a1a; /* Dark background for the section */
+    background-color: #1a1a1a;
     text-align: center;
 }
 
@@ -168,9 +170,8 @@ nav ul li a:hover {
     font-weight: 600;
 }
 
-/* Project Card Styling with Gradient */
 .project {
-    background: linear-gradient(135deg, #2f3b40, #3e4c51); /* Subtle Dark Gradient */
+    background: linear-gradient(135deg, #2f3b40, #3e4c51);
     color: #fff;
     border-radius: 8px;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
@@ -202,12 +203,11 @@ nav ul li a:hover {
     margin-bottom: 0.5rem;
 }
 
-/* Skills Container - Above Buttons */
+/* ========== Skills ========== */
 .skills-container {
     margin-bottom: 15px;
 }
 
-/* Skills Button Styling - Orange Gradient */
 .btn-skills {
     display: inline-block;
     padding: 6px 12px;
@@ -226,7 +226,7 @@ nav ul li a:hover {
     background: linear-gradient(135deg, #feb47b, #ff7e5f);
 }
 
-/* Buttons */
+/* ========== Buttons ========== */
 .btn-container {
     margin-top: 10px;
 }
@@ -244,7 +244,7 @@ nav ul li a:hover {
     background-color: #45a049;
 }
 
-/* Contact Section */
+/* ========== Contact Section ========== */
 #contact {
     padding: 3rem 1rem;
     background-color: #1f1f1f;
@@ -267,22 +267,24 @@ nav ul li a:hover {
     color: #FFD700;
 }
 
-/* Profile Picture */
-.abou-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px; /* space between image and text */
+/* ========== Footer ========== */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 3rem;
 }
 
-.about-photo {
-    width: 200px; /* Set your preferred width */
-    height: 200px; /* Keep it square */
-    object-fit: cover;
-    border-radius: 50%; /* Make it circular */
-    border: 3px solid #ccc; /* Optional: add border */
+/* ========== Responsive Design ========== */
+@media (max-width: 768px) {
+    .abou-content,
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 }
-
 
 @media (max-width: 480px) {
     header {
@@ -317,19 +319,4 @@ nav ul li a:hover {
     #about p {
         font-size: 1rem;
     }
-
-/* Footer */
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
-    margin-top: 3rem;
-}
-
-/* Container Layout */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 2rem;
 }
