@@ -117,6 +117,7 @@ nav ul li a:hover {
     align-items: center;
     justify-content: flex-start; /* Aligns content to the left */
     gap: 30px; /* Space between image and text */
+    flex-wrap: wrap;
 }
 
 .about-photo {
@@ -124,13 +125,25 @@ nav ul li a:hover {
     height: 200px;
     object-fit: cover;
     border-radius: 50%; /* Makes the image circular */
-    border: 3px solid #ccc; /* Optional: Add border */
+    border: 3px solid #fff; /* Optional: Add border */
 }
 
 #about p {
     font-size: 1.1rem;
     max-width: 800px;
     line-height: 1.6;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 250px;
+  font-size: 18px;
+  color: #ddd;
+}
+
+.typed-text {
+  font-weight: 600;
+  color: #00bfff; /* or any accent color you like */
 }
 
 /* Responsive Design */
