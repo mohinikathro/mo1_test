@@ -11,11 +11,21 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
 
+<!-- Add Typed.js and init just before closing body tag -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+  var typed = new Typed(".typed-text", {
+    strings: ["a Data Scientist", "a Generative AI Engineer", "a Data Analyst", "a Student", "Machine Learning Engineer"],
+    typeSpeed: 60,
+    backSpeed: 40,
+    loop: true
+  });
+</script>
 <body>
     <header>
         <div class="container">
             <h1>Mohini Kathrotiya</h1>
-            <p>Data Scientist | AI & ML Engineer | Data Analyst</p>
+            <p>I'm <span class="typed-text"></span></p>
             <nav>
                 <ul>
                     <li><a href="#about">About</a></li>
