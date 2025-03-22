@@ -1,101 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohini Kathrotiya - Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohini Kathrotiya - Portfolio</title>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+
+  <!-- AOS Animations -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+  <!-- Your CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background-color: #1e1e1e;
+      color: white;
+    }
+
+    header {
+      background-color: #2c2c2c;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 10px;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    section {
+      padding: 60px 20px;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .about-content {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .about-photo {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #fff;
+    }
+
+    .about-text {
+      flex: 1;
+      min-width: 250px;
+      font-size: 18px;
+    }
+
+    .typed-text {
+      font-weight: 600;
+      color: #00bfff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #2c2c2c;
+      margin-top: 50px;
+    }
+
+    .btn-skills {
+      display: inline-block;
+      background: #444;
+      padding: 5px 10px;
+      border-radius: 5px;
+      margin: 5px 5px 0 0;
+    }
+
+    .btn-container .btn {
+      display: inline-block;
+      background-color: #00bfff;
+      color: white;
+      padding: 8px 14px;
+      margin: 8px 8px 0 0;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .project {
+      margin-bottom: 40px;
+    }
+
+    .education-item {
+      margin-bottom: 30px;
+    }
+
+  </style>
 </head>
 
-<!-- Add Typed.js and init just before closing body tag -->
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-<script>
-  var typed = new Typed(".typed-text", {
-    strings: ["a Data Scientist", "a Generative AI Engineer", "a Data Analyst", "a Student", "Machine Learning Engineer"],
-    typeSpeed: 60,
-    backSpeed: 40,
-    loop: true
-  });
-</script>
 <body>
-    <header>
-        <div class="container">
-            <h1>Mohini Kathrotiya</h1>
-            <p>I'm <span class="typed-text"></span></p>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="https://github.com/Mohinikathro" target="_blank">GitHub</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <section id="about">
-        <div class="container">
-            <h2 data-aos="fade-up">About Me</h2>
-	    <div class="abou-content">
-		<img src="Mo.jpg" alt="Mohini Kathrotiya" class="about-photo" data-aos="fade-right">
-                <p data-aos="fade-up">I specialize in AI-driven web applications, large language models, and predictive analytics. My mission is to solve real-world problems using cutting-edge technology.</p>
-	     </div>
-        </div>
-    </section>
-
-    <section id="education">
+  <header>
     <div class="container">
-        <h2 data-aos="fade-up">Education</h2>
-
-        <div class="education-item" data-aos="fade-right">
-            <h3>Master of Science in Data Analytics</h3>
-            <p><strong>San Jose State University</strong> | Aug 2023 - May 2025</p>
-            <ul>
-                <li>Specialized in Machine Learning, NLP, and Big Data Analytics.</li>
-                <li>Conducted research on AI-driven content detection.</li>
-                <li>GPA: 3.52/4.0</li>
-            </ul>
-        </div>
-
-        <div class="education-item" data-aos="fade-right">
-            <h3>Bachelor of Engineering in Information Technology</h3>
-            <p><strong>Universal College Of Engineering, (University Of Mumbai)</strong> | Aug 2018 - May 2022</p>
-            <ul>
-                <li>Focused on Data Structures, Algorithms, and AI.</li>
-                <li>Developed a predictive model for student performance analytics.</li>
-                <li>GPA: 3.8/4.0</li>
-            </ul>
-        </div>
+      <h1>Mohini Kathrotiya</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#education">EDUCATION</a></li>
+          <li><a href="#projects">PROJECTS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+          <li><a href="https://github.com/Mohinikathro" target="_blank">GITHUB</a></li>
+        </ul>
+      </nav>
     </div>
-</section>
+  </header>
 
-    <section id="projects">
-        <div class="container">
-            <h2 data-aos="fade-up">Projects</h2>
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <h2 data-aos="fade-up">About Me</h2>
+      <div class="about-content">
+        <img src="Mo.jpg" alt="Mohini Kathrotiya" class="about-photo" data-aos="fade-right">
+        <div class="about-text" data-aos="fade-left">
+          <p>I'm <span class="typed-text"></span></p>
+          <p>I specialize in AI-driven web applications, large language models, and predictive analytics.
+            My mission is to solve real-world problems using cutting-edge technology.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-            <!-- AI-Driven Content Source Identification -->
-            <div class="project" data-aos="flip-left">
-                <h3>AI-Driven Content Source Identification</h3>
-                <p><strong>Sep 2024 - Dec 2024</strong></p>
-                <ul>
-                    <li>Developed plagiarism detection models using RoBERTa, achieving 96% accuracy.</li>
-                    <li>Optimized Mistral-7B using QLoRA fine-tuning.</li>
-                    <li>Improved prediction accuracy by 15% using Few-Shot Learning.</li>
-                </ul>
-                <div class="skills-container">
-                    <span class="btn-skills">LLMs</span>
-                    <span class="btn-skills">Transformers</span>
-                    <span class="btn-skills">PyTorch</span>
-                </div>
-                <div class="btn-container">
-                    <a href="https://huggingface.co/spaces/Mohinikathro/AI-Content-Detector" class="btn" target="_blank">Live Demo</a>
-                    <a href="https://github.com/mohinikathro/AI-Driven-Content-Source-Identification" class="btn" target="_blank">View on GitHub</a>
-                </div>
-            </div>
+  <!-- Education Section -->
+  <section id="education">
+    <div class="container">
+      <h2 data-aos="fade-up">Education</h2>
+
+      <div class="education-item" data-aos="fade-right">
+        <h3>Master of Science in Data Analytics</h3>
+        <p><strong>San Jose State University</strong> | Aug 2023 - May 2025</p>
+        <ul>
+          <li>Specialized in Machine Learning, NLP, and Big Data Analytics.</li>
+          <li>Conducted research on AI-driven content detection.</li>
+          <li>GPA: 3.52/4.0</li>
+        </ul>
+      </div>
+
+      <div class="education-item" data-aos="fade-right">
+        <h3>Bachelor of Engineering in Information Technology</h3>
+        <p><strong>Universal College Of Engineering, (University Of Mumbai)</strong> | Aug 2018 - May 2022</p>
+        <ul>
+          <li>Focused on Data Structures, Algorithms, and AI.</li>
+          <li>Developed a predictive model for student performance analytics.</li>
+          <li>GPA: 3.8/4.0</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="container">
+      <h2 data-aos="fade-up">Projects</h2>
+
+      <!-- Project 1 -->
+      <div class="project" data-aos="flip-left">
+        <h3>AI-Driven Content Source Identification</h3>
+        <p><strong>Sep 2024 - Dec 2024</strong></p>
+        <ul>
+          <li>Developed plagiarism detection models using RoBERTa, achieving 96% accuracy.</li>
+          <li>Optimized Mistral-7B using QLoRA fine-tuning.</li>
+          <li>Improved prediction accuracy by 15% using Few-Shot Learning.</li>
+        </ul>
+        <div class="skills-container">
+          <span class="btn-skills">LLMs</span>
+          <span class="btn-skills">Transformers</span>
+          <span class="btn-skills">PyTorch</span>
+        </div>
+        <div class="btn-container">
+          <a href="https://huggingface.co/spaces/Mohinikathro/AI-Content-Detector" class="btn" target="_blank">Live Demo</a>
+          <a href="https://github.com/mohinikathro/AI-Driven-Content-Source-Identification" class="btn" target="_blank">View on GitHub</a>
+        </div>
+      </div>
 
             <!-- Predictive Analytics for Wildfire Risk -->
             <div class="project" data-aos="flip-left">
@@ -203,19 +312,35 @@
 		</div>
             </div>
 
+      
+    </div>
+  </section>
 
+  <footer>
+    <p>&copy; 2023–2025 Mohini Kathrotiya</p>
+  </footer>
 
-        </div>
-    </section>
+  <!-- Typed.js -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    var typed = new Typed(".typed-text", {
+      strings: [
+        "a Data Scientist",
+        "a Generative AI Engineer",
+        "a Data Analyst",
+        "a Student",
+        "a Machine Learning Engineer"
+      ],
+      typeSpeed: 60,
+      backSpeed: 40,
+      loop: true
+    });
+  </script>
 
-    <footer>
-        <p>&copy; 2023-2025 Mohini Kathrotiya</p>
-    </footer>
-
-    <script>
-        AOS.init();
-    </script>
+  <!-- AOS Init -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
-
-
