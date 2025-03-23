@@ -91,12 +91,15 @@ section {
   margin-top: 30px; /* Added from CSS 1 */
 }
 
-.about-photo {
+..about-photo {
   width: 200px;
   height: 200px;
   object-fit: cover;
   border-radius: 50%;
-  border: 3px solid #fff; /* Unified border style */
+  border: 3px solid #fff;
+  flex-shrink: 0;
+  align-self: flex-start; /* This line ensures top alignment */
+  margin-top: 0; /* Optional, just to be safe */
 }
 
 .about-text {
