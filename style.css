@@ -84,7 +84,7 @@ section {
 .about-content,
 .abou-content {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
   gap: 30px;
   flex-wrap: wrap;
